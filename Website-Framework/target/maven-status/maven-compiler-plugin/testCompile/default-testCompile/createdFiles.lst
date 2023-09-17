@@ -1,0 +1,16 @@
+magentoWeb\tests\HooksHandler.class
+magentoWeb\utilities\listeners\TestNGListener.class
+magentoWeb\browser\Browser.class
+magentoWeb\utilities\extent_report\ExtentReport.class
+magentoWeb\pages\Register.class
+magentoWeb\utilities\image_reducer\ImageReducer.class
+magentoWeb\pages\MyAccount.class
+magentoWeb\tests\BaseTest.class
+magentoWeb\pages\Home.class
+magentoWeb\pages\BasePage.class
+magentoWeb\MagentoWebsite.class
+magentoWeb\utilities\DownloadsFileHandler.class
+magentoWeb\utilities\ConfigProperties.class
+magentoWeb\driver\WebDriverHandler.class
+magentoWeb\tests\registerAndLogin\RegisterAndLoginStepDef.class
+magentoWeb\tests\registerAndLogin\RegisterAndLoginRunner.class

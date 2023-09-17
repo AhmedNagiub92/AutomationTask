@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vodafone Website">
+    <listeners>
+        <listener class-name="com.vodafone.vodafone_website_taf.utilities.listeners.TestNGListener"/>
+    </listeners>
+
+    <test name="Website-Report">
+        <classes>
+            <class name="com.vodafone.vodafone_website_taf.utilities.extent_report.ExtentReport"/>
+            <class name="com.vodafone.vodafone_website_taf.tests.consumer_website.balance_transfer_and_details.BalanceTransferAndDetailsRunner"/>
+        </classes>
+    </test>
+</suite>
