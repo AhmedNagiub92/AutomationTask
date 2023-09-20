@@ -1,5 +1,5 @@
 Feature: My Cart section
-
+@smoke
   Scenario: User checks out the order after complete the payment details
     Given Magento website is opened
     When user clicks on shop new yoga

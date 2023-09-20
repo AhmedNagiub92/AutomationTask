@@ -117,7 +117,7 @@ public class MyCartStepDef extends BaseTest {
 
         @And("user clicks on place order")
         public void userClicksOnPlaceOrder() throws InterruptedException {
-            Thread.sleep(3000);
+            Thread.sleep(4000);
             browser.magentoWebsite.cart.clickOnPlaceOrderBtn();
         }
 

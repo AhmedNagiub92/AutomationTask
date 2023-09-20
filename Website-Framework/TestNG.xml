@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Magento">
+    <listeners>
+        <listener class-name="magentoWeb.utilities.listeners.TestNGListener"/>
+    </listeners>
+
+    <test name="Final Task Report">
+        <classes>
+            <class name="magentoWeb.utilities.extent_report.ExtentReport"/>
+            <class name="magentoWeb.tests.registerAndLogin.RegisterAndLoginRunner"/>
+            <class name="magentoWeb.tests.myCart.MyCartRunner"/>
+        </classes>
+    </test>
+</suite>

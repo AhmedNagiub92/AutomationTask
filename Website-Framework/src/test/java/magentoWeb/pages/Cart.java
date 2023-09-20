@@ -23,7 +23,7 @@ public class Cart extends BasePage{
     private final By shoppingFixedshippingMethod =By.xpath("//input[@name='ko_unique_1']");
     private final By shoppingNextBtn =By.xpath("//button[@class='button action continue primary']");
     private final By orderID = By.xpath("//div[@class='checkout-success']//p[1]");
-    private final By placeorder = By.xpath("//button[@title='Place Order']");
+    private final By placeorder = By.xpath("//span[normalize-space()='Place Order']");
 
 
 

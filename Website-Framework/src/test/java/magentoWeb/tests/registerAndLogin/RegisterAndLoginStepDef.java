@@ -16,6 +16,7 @@ public class RegisterAndLoginStepDef extends BaseTest {
     String password = "Test@1234";
     String firstname = faker.artist().name();
     String lastname = faker.artist().name();
+    String email,pass,keyword;
 
     @Given("Magento website is opened")
     public void magentoWebsiteIsOpened() throws InterruptedException {
@@ -68,4 +69,22 @@ public class RegisterAndLoginStepDef extends BaseTest {
     }
 
 
+    @When("user logins")
+    public void userLogins() {
+        browser.magentoWebsite.home.clickOnSignIn();
+        browser.magentoWebsite.home.enterEmail(email);
+        browser.magentoWebsite.home.enterPassword(pass);
+        browser.magentoWebsite.home.clickOnSignInBtn();
+    }
+
+    @And("user searches with Nike")
+    public void userSearchesWithNike() {
+        browser.magentoWebsite.home.enterSearchKeyword(keyword);
+        browser.magentoWebsite.home.clickOnSerchBtn();
+    }
+
+    @Then("search results appears")
+    public void searchResultsAppears() {
+        Assert.assertTrue(browser.magentoWebsite.home.getNoSearchresult().isDisplayed());
+    }
 }
